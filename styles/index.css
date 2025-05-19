@@ -65,8 +65,9 @@ body {
 
 .name h1 strong {
     text-decoration: none;
-    color: black;
-    border-color: white;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    font-weight: 900;
 }
 
 /*@media (max-width: 1080px) {

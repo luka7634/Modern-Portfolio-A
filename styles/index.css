@@ -39,8 +39,9 @@ body {
     max-width: 1100px;
     padding: 30px;
     justify-self: center;
-    transition: all 1s ease;
+    transition: all 1s ease-in-out;
     box-shadow: 0 0 20px rgba(0, 0, 0, .7);
+    margin-bottom: 40px;
 }
 
 .name h1 {
@@ -60,7 +61,7 @@ body {
 }
 
 .name:hover {
-    background: linear-gradient(#4c00ff 0%, #ffffff00 100%);
+    background: linear-gradient(#4c00ff 0%, #ff0000 100%);
 }
 
 .name h1 strong {
@@ -68,10 +69,108 @@ body {
     color: transparent;
     -webkit-text-stroke: 2px white;
     font-weight: 900;
+    font-size: 65px;
 }
 
-/*@media (max-width: 1080px) {
-    .header nav{
-        display: none;
-    }
-}*/
+.name h1 .raya {
+    color: white;
+    font-size: 60px;
+}
+
+.description p{
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.prices {
+    justify-content: center;
+    background-color: #464646;
+    width: 100%;
+    max-width: fit-content;
+    padding: 30px;
+    justify-self: center;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .7);
+}
+
+.prices .target h2{
+    color: white;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.prices .card-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.prices .card-holder .card {
+    padding-top: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #343434;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 350px;
+    transition: all 0.5s ease-in-out;
+}
+
+.prices .card-holder .card h2{
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.prices .card-holder .card p{
+    color: white;
+    text-justify: distribute-all-lines;
+    font-size: 16px;
+}
+
+.prices .card-holder .card button{
+    background-color: #4c00ff;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.prices .card-holder .card button:hover{
+    background-color: #5d00ff;
+}
+
+.prices .card-holder .card:hover{
+    transform: scale(1.5) translateY(-100px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .7);
+    backdrop-filter: blur(7px);
+    background-color: transparent;
+}
+
+.prices .card-holder .card gold{
+    color: gold;
+    text-decoration: underline;
+    text-decoration-color: gold;
+}
+
+.prices .card-holder .card diamond{
+    color: turquoise;
+    text-decoration: underline;
+    text-decoration-color: turquoise;
+}

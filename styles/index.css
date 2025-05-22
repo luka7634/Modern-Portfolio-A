@@ -222,3 +222,13 @@ footer {
     max-width: 1400px;
     place-self: center;
 }
+
+@media (max-width: 1080px) {
+    .header nav{
+        display: flex;
+        gap: 5rem;
+        list-style-type: none;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}

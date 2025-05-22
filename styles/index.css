@@ -96,6 +96,7 @@ body {
     border: none;
     border-radius: 50px;
     box-shadow: 0 0 20px rgba(0, 0, 0, .7);
+    margin-bottom: 30px;
 }
 
 .prices .target h2{
@@ -110,7 +111,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
-
 }
 
 .prices .card-holder .card {
@@ -154,6 +154,7 @@ body {
 
 .prices .card-holder .card button:hover{
     background-color: #5d00ff;
+    transform: translateY(-5px);
 }
 
 .prices .card-holder .card:hover{
@@ -173,4 +174,13 @@ body {
     color: turquoise;
     text-decoration: underline;
     text-decoration-color: turquoise;
+}
+
+footer{
+    background-color: #2a2a2a;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .7);
+}
+
+footer .head p {
+    color: white;
 }

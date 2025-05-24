@@ -245,6 +245,26 @@ footer {
 
 }
 
+@media (max-width: 720px) {
+    .header nav, footer .row-1 nav {
+        gap: 0.5rem;
+    }
+
+    .header a{
+        font-size: 11px;
+    }
+    
+    .prices .card-holder .card {
+        min-width: 200px;
+    }
+    
+    .name, .prices {
+        border-radius: 30px;
+    }
+
+
+}
+
 @media (max-width: 480px) {
     .name h1 {
         font-size: 20px;

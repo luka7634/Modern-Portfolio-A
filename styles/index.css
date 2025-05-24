@@ -251,7 +251,7 @@ footer {
     }
 
     .header a{
-        font-size: 11px;
+        display: none;
     }
     
     .prices .card-holder .card {

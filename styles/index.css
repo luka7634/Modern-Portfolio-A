@@ -16,6 +16,7 @@ body {
     list-style-type: none;
     justify-content: center;
     margin-top: 20px;
+    transition: all 0.3s ease-in-out;
 }
 
 .header a {
@@ -27,6 +28,7 @@ body {
     padding-right: 15px;
     border: none;
     border-radius: 20px;
+    font-size: 18px;
 }
 
 .header a:hover {
@@ -227,6 +229,10 @@ footer {
     .header nav, footer .row-1 nav {
         gap: 0.5rem;
     }
+
+    .header a{
+        font-size: 14px;
+    }
     
     .prices .card-holder .card {
         min-width: 200px;
@@ -235,6 +241,8 @@ footer {
     .name, .prices {
         border-radius: 30px;
     }
+
+
 }
 
 @media (max-width: 480px) {

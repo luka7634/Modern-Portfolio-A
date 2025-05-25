@@ -235,42 +235,11 @@ footer {
 
 @media (max-width: 768px) {
     .header nav, footer .row-1 nav {
-        gap: 0.5rem;
+        gap: 1.5rem;
     }
 
-    .header a{
-        font-size: 14px;
-    }
-
-    .name {
-        padding: 3px;
-    }
-
-    .name h1 .raya {
-        font-size: 20px;
-    }
-    
-    .prices .card-holder .card {
-        min-width: 200px;
-    }
-    
-    .name, .prices {
-        border-radius: 30px;
-    }
-
-    .prices .card-holder {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .prices .card-holder .card {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 720px) {
-    .header nav, footer .row-1 nav {
-        gap: 0.5rem;
+    body {
+        margin-top: 70px;
     }
 
     .header a{
@@ -283,9 +252,9 @@ footer {
     }
 
     .name h1 .raya {
-        font-size: 20px;
+        font-size: 60px;
     }
-    
+
     .prices .card-holder .card {
         min-width: 200px;
     }
@@ -302,9 +271,67 @@ footer {
     .prices .card-holder .card {
         max-width: 100%;
     }
+
+    .prices .card-holder .card:hover {
+        transform: scale(1.07);
+        box-shadow: 0 0 20px rgba(0, 0, 0, .7);
+        backdrop-filter: blur(7px);
+        background-color: transparent;
+    }
+}
+
+@media (max-width: 720px) {
+    .header nav, footer .row-1 nav {
+        gap: 1.2rem;
+    }
+
+    body {
+        margin-top: 70px;
+    }
+
+    .header a{
+        font-size: 14px;
+        padding: 7px;
+    }
+
+    .name {
+        padding: 3px;
+    }
+
+    .name h1 .raya {
+        font-size: 60px;
+    }
+
+    .prices .card-holder .card {
+        min-width: 200px;
+    }
+    
+    .name, .prices {
+        border-radius: 30px;
+    }
+
+    .prices .card-holder {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .prices .card-holder .card {
+        max-width: 100%;
+    }
+
+    .prices .card-holder .card:hover {
+        transform: scale(1.07);
+        box-shadow: 0 0 20px rgba(0, 0, 0, .7);
+        backdrop-filter: blur(7px);
+        background-color: transparent;
+    }
 }
 
 @media (max-width: 480px) {
+    body {
+        margin-top: 70px;
+    }
+    
     .name h1 {
         font-size: 20px;
     }
@@ -329,5 +356,12 @@ footer {
     
     .prices .card-holder .card {
         max-width: 100%;
+    }
+
+    .prices .card-holder .card:hover {
+        transform: scale(1.07);
+        box-shadow: 0 0 20px rgba(0, 0, 0, .7);
+        backdrop-filter: blur(7px);
+        background-color: transparent;
     }
 }

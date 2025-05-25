@@ -254,7 +254,14 @@ footer {
         border-radius: 30px;
     }
 
-
+    .prices .card-holder {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .prices .card-holder .card {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 720px) {
@@ -279,7 +286,14 @@ footer {
         border-radius: 30px;
     }
 
-
+    .prices .card-holder {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .prices .card-holder .card {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 480px) {

@@ -262,6 +262,10 @@ footer {
         font-size: 14px;
         padding: 7px;
     }
+
+    .name {
+        padding: 10px;
+    }
     
     .prices .card-holder .card {
         min-width: 200px;

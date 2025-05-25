@@ -137,6 +137,9 @@ body {
     width: 100%;
     max-width: 350px;
     transition: all 0.5s ease-in-out;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
 }
 
 .prices .card-holder .card h2 {
@@ -165,6 +168,7 @@ body {
     text-decoration: underline;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    margin-top: auto;
 }
 
 .prices .card-holder .card button:hover {

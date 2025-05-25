@@ -191,15 +191,15 @@ body {
 }
 
 .prices .card-holder .card gold {
-    color: gold;
+    color: #00FF5D;
     text-decoration: underline;
-    text-decoration-color: gold;
+    text-decoration-color: #00FF5D;
 }
 
 .prices .card-holder .card diamond {
-    color: turquoise;
+    color: #FF5D00;
     text-decoration: underline;
-    text-decoration-color: turquoise;
+    text-decoration-color: #FF5D00;
 }
 
 .custom-work {

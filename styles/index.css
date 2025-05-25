@@ -245,6 +245,10 @@ footer {
     .name {
         padding: 3px;
     }
+
+    .name h1 .raya {
+        font-size: 14px;
+    }
     
     .prices .card-holder .card {
         min-width: 200px;
@@ -277,6 +281,10 @@ footer {
     .name {
         padding: 3px;
     }
+
+    .name h1 .raya {
+        font-size: 14px;
+    }
     
     .prices .card-holder .card {
         min-width: 200px;
@@ -308,6 +316,10 @@ footer {
 
     .name {
         padding: 3px;
+    }
+
+    .name h1 .raya {
+        font-size: 14px;
     }
     
     .prices .card-holder {

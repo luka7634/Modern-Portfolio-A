@@ -1,3 +1,7 @@
+document.querySelectorAll('.smooth-scroll').forEach(anchor => {
+    
+})
+
 document.getElementById('basic').addEventListener('click', function() {
     const email = 'luka41935@gmail.com';
     const subject = 'Purchase';

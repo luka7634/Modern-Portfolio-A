@@ -112,6 +112,17 @@ body {
     border-radius: 50px;
     box-shadow: 0 0 20px rgba(0, 0, 0, .7);
     margin-bottom: 30px;
+    animation: fadeInf 1s ease-in-out;
+}
+
+@keyframes fadeInf {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    } to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
 
 .prices .target h2 {

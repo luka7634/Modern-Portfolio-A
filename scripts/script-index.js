@@ -31,4 +31,3 @@ document.getElementById('enterprise').addEventListener('click', function() {
 
     window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
-

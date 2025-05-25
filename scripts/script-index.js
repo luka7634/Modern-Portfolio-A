@@ -8,7 +8,7 @@ document.querySelectorAll('.smooth-scroll').forEach(anchor => {
     });
 });
 
-const textElement = getElementById('animated');
+const textElement = document.getElementById('animated');
 const animationSequence = [
     "    ",
     "L   ",
@@ -17,7 +17,7 @@ const animationSequence = [
     "Luka",
     "Luk ",
     "Lu  ",
-    "L"
+    "L   "
 ];
 
 let current = 0;
@@ -26,7 +26,7 @@ function animateText() {
     textElement.textContent = animationSequence[current];
     current = (current + 1) % animationSequence.length;
 
-    if (currentIndex === 0) setTimeout(animateText, 1000);
+    if (current === 0) setTimeout(animateText, 500);
     else setTimeout(animateText, 500);
 }
 
@@ -61,4 +61,3 @@ document.getElementById('enterprise').addEventListener('click', function() {
 
     window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
-let i = 0, b = a.length - 1;

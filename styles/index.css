@@ -85,6 +85,7 @@ body {
     -webkit-text-stroke: 2px white;
     font-weight: 900;
     font-size: 65px;
+    white-space: pre;
 }
 
 .name h1 .raya {

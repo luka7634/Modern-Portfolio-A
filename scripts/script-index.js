@@ -8,6 +8,36 @@ document.querySelectorAll('.smooth-scroll').forEach(anchor => {
     });
 });
 
+const textElement = getElementById('animated');
+const animationSequence = [
+    "    ",
+    "L   ",
+    "Lu  ",
+    "Luk ",
+    "Luka",
+    "Luk ",
+    "Lu  ",
+    "L"
+];
+
+let current = 0;
+
+function animateText() {
+    textElement.textContent = animationSequence[current];
+    current = (current + 1) % animationSequence.length;
+
+    if (currentIndex === 0) setTimeout(animateText, 1000);
+    else setTimeout(animateText, 500);
+}
+
+animateText();
+
+
+
+
+
+
+
 document.getElementById('basic').addEventListener('click', function() {
     const email = 'luka41935@gmail.com';
     const subject = 'Purchase';

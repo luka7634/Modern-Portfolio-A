@@ -32,8 +32,6 @@ function animateText() {
 
 animateText();
 
-
-
 const email = 'luka41935@gmail.com';
 const subject = 'Purchase';
 const body = "Hello, I’m interested in...\n\nCould you kindly assist me with the process?";

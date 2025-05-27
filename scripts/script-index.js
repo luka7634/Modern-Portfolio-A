@@ -32,26 +32,25 @@ function animateText() {
 
 animateText();
 
-document.getElementById('basic').addEventListener('click', function() {
-    const email = 'luka41935@gmail.com';
-    const subject = 'Purchase';
-    const body = "Hello, I’m interested in...\n\nCould you kindly assist me with the process?";
 
+
+const email = 'luka41935@gmail.com';
+const subject = 'Purchase';
+const body = "Hello, I’m interested in...\n\nCould you kindly assist me with the process?";
+
+
+document.getElementById('basic').addEventListener('click', function() {
     window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
 
 document.getElementById('full').addEventListener('click', function() {
-    const email = 'luka41935@gmail.com';
-    const subject = 'Purchase';
-    const body = "Hello, I’m interested in...\n\nCould you kindly assist me with the process?";
-
     window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
 
 document.getElementById('enterprise').addEventListener('click', function() {
-    const email = 'luka41935@gmail.com';
-    const subject = 'Purchase';
-    const body = "Hello, I’m interested in...\n\nCould you kindly assist me with the process?";
-
     window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+});
+
+document.getElementById('contactBtn').addEventListener('click', function() {
+    window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
 });

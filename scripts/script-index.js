@@ -55,11 +55,3 @@ document.getElementById('enterprise').addEventListener('click', function() {
 
     window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
-
-
-
-// para variables usa:
-{
-  "query": "query ($id: ID!) { usuario(id: $id) { nombre } }",
-  "variables": { "id": "123" }
-}

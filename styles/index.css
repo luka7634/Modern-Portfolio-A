@@ -93,6 +93,12 @@ body {
     font-size: 60px;
 }
 
+.amount {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .description p {
     color: white;
     text-align: center;

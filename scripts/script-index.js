@@ -10,14 +10,18 @@ document.querySelectorAll('.smooth-scroll').forEach(anchor => {
 
 const textElement = document.getElementById('animated');
 const animationSequence = [
-    "    ",
-    "L   ",
-    "Lu  ",
-    "Luk ",
-    "Luka",
-    "Luk ",
-    "Lu  ",
-    "L   "
+    "      ",
+    "R     ",
+    "Ro    ",
+    "Roy   ",
+    "Royb  ",
+    "Roybe ",
+    "Roybel",
+    "Roybe ",
+    "Royb  ",
+    "Roy   ",
+    "Ro    ",
+    "R     ",
 ];
 
 let current = 0;
@@ -31,6 +35,25 @@ function animateText() {
 }
 
 animateText();
+
+function sum(end, duration) {
+    let start = 0;
+    let i = end / (duration / 10);
+    let amount = document.getElementById("amount");
+
+    let intervalo = setInterval(() => {
+        start += i;
+        if (start >= end) {
+            start = end;
+            clearInterval(intervalo);
+        }
+        amount.textContent = Math.floor(start);
+    }, 10);
+}
+
+sum(1, 500);
+
+
 
 const email = 'luka41935@gmail.com';
 const subject = 'Purchase';

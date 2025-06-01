@@ -11,9 +11,6 @@ if (!sessionStorage.getItem("redirected")) {
     window.location.href = sites[userLang] || defaultSite;
 }
 
-
-
-
 document.querySelectorAll('.smooth-scroll').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();

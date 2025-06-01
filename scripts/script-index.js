@@ -32,6 +32,7 @@ function animateText() {
 
     if (current === 0) setTimeout(animateText, 300);
     else setTimeout(animateText, 300);
+    
 }
 
 animateText();

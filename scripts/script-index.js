@@ -30,8 +30,8 @@ function animateText() {
     textElement.textContent = animationSequence[current];
     current = (current + 1) % animationSequence.length;
 
-    if (current === 0) setTimeout(animateText, 500);
-    else setTimeout(animateText, 500);
+    if (current === 0) setTimeout(animateText, 300);
+    else setTimeout(animateText, 300);
 }
 
 animateText();

@@ -143,7 +143,7 @@ body {
     width: 100%;
     max-width: 350px;
     transition: all 0.5s ease-in-out;
-    min-height: 320px;
+    min-height: 372px;
     display: flex;
     flex-direction: column;
 }

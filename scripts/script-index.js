@@ -43,7 +43,7 @@ if (document.readyState === 'complete' || document.readyState === 'interactive')
 }
 
 document.querySelectorAll('.smooth-scroll').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const targetId = this.getAttribute('href');
         document.querySelector(targetId).scrollIntoView({
@@ -104,18 +104,18 @@ const subject = 'Purchase';
 const body = "Hello, I’m interested in...\n\nCould you kindly assist me with the process?";
 
 
-document.getElementById('basic').addEventListener('click', function() {
+document.getElementById('basic').addEventListener('click', function () {
     window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
 
-document.getElementById('full').addEventListener('click', function() {
+document.getElementById('full').addEventListener('click', function () {
     window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
 
-document.getElementById('enterprise').addEventListener('click', function() {
+document.getElementById('enterprise').addEventListener('click', function () {
     window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
 
-document.getElementById('contactBtn').addEventListener('click', function() {
+document.getElementById('contactBtn').addEventListener('click', function () {
     window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
 });

@@ -1,16 +1,46 @@
-/*
-if (!sessionStorage.getItem("redirected")) {
-    const userLang = navigator.language || navigator.languages[0];
-    const sites = {
-        "es": "/aside/index-es.html",
-        "en": "/index.html"
-    };
+sessionStorage.removeItem("redirected");
 
-    const defaultSite = "/index.html";
+function getBrowserLanguage() {
+    return (navigator.language || navigator.userLanguage || navigator.languages[0] || 'en').split('-')[0].toLowerCase();
+}
 
-    sessionStorage.setItem("redirected", "true");
-    window.location.href = sites[userLang] || defaultSite;
-}*/
+function getCurrentPage() {
+    return window.location.pathname.split('/').pop().toLowerCase();
+}
+
+function setupLanguageRedirect() {
+    if (!sessionStorage.getItem("redirected")) {
+        const userLang = getBrowserLanguage();
+        const currentPage = getCurrentPage();
+
+        const languageMap = {
+            "es": {
+                targetFile: "index-es.html",
+                targetPath: "./aside/index-es.html"
+            },
+            "en": {
+                targetFile: "index.html",
+                targetPath: "../index.html"
+            }
+        };
+
+        const targetConfig = languageMap[userLang] || languageMap["en"];
+
+        if (targetConfig && currentPage !== targetConfig.targetFile) {
+            sessionStorage.setItem("redirected", "true");
+            window.location.href = targetConfig.targetPath;
+        } else {
+            console.log("No se requiere redirección. Idioma:", userLang,
+                "Página actual:", currentPage);
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', setupLanguageRedirect);
+
+if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    setTimeout(setupLanguageRedirect, 0);
+}
 
 document.querySelectorAll('.smooth-scroll').forEach(anchor => {
     anchor.addEventListener('click', function(e) {

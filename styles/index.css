@@ -344,7 +344,7 @@ footer {
 @media (max-width: 720px) {
     .header nav, footer .row-1 nav {
         gap: 1.2rem;
-    }
+    } 
 
     /* body {
         margin-top: 70px;

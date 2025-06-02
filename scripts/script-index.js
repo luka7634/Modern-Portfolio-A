@@ -54,18 +54,18 @@ document.querySelectorAll('.smooth-scroll').forEach(anchor => {
 
 const textElement = document.getElementById('animated');
 const animationSequence = [
-    "",
-    "R",
-    "Ro",
-    "Roy",
-    "Royb",
-    "Roybe",
+    "      ",
+    "R     ",
+    "Ro    ",
+    "Roy   ",
+    "Royb  ",
+    "Roybe ",
     "Roybel",
-    "Roybe",
-    "Royb",
-    "Roy",
-    "Ro",
-    "R",
+    "Roybe ",
+    "Royb  ",
+    "Roy   ",
+    "Ro    ",
+    "R     ",
 ];
 
 let current = 0;

@@ -12,7 +12,6 @@ body {
     min-height: 100vh;
 }
 
-/* Estilos generales */
 .header {
     position: sticky;
     width: 100%;
@@ -32,7 +31,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    flex-wrap: wrap; /* Permite que los enlaces se ajusten en pantallas pequeñas */
+    flex-wrap: wrap;
 }
 
 .header a {
@@ -49,19 +48,18 @@ body {
     background: radial-gradient(#464646, #2a2a2a);
 }
 
-/* Estilos generales */
 .name {
     background: radial-gradient(#7700ff00 0%, #2a2a2a 100%);
     border-radius: 50px;
     width: 90%;
     max-width: 1100px;
     padding: 30px;
-    margin: 0 auto 40px auto; /* Centrado */
+    margin: 0 auto 40px auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, .7);
     transition: all 1s ease-in-out;
 }
 
-/* Títulos */
+
 .name h1 {
     color: white;
     text-decoration: underline;
@@ -79,19 +77,19 @@ body {
     white-space: pre;
 }
 
-/* Texto */
+
 .name p {
     color: white;
     text-align: justify;
     padding: 0 20px;
 }
 
-/* Efecto hover */
+
 .name:hover {
     background: linear-gradient(#4c00ff 0%, #ff0000 100%);
 }
 
-/* Contador de personas ayudadas */
+
 .amount {
     font-size: 18px;
     font-weight: bold;
@@ -247,47 +245,6 @@ body {
     transform: translateY(-7px);
 }
 
-/* footer {
-    background-color: #2a2a2a;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .7);
-}
-
-footer .head p {
-    color: white;
-    text-align: center;
-    padding-top: 18px;
-}
-
-footer .row-1 nav {
-    display: flex;
-    gap: 10rem;
-    list-style-type: none;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-footer .row-1 nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: all 0.3s ease-in-out;
-    border: none;
-    border-radius: 20px;
-    padding: 10px;
-    margin-bottom: 17px;
-}
-
-footer .row-1 nav a:hover {
-    text-decoration: underline;
-    background-color: #1100ff6a;
-}
-
-footer {
-    width: 100%;
-    max-width: 1400px;
-    place-self: center;
-} */
-
 #footer {
     background: linear-gradient(to right, #222, #333);
     color: #fff;
@@ -307,7 +264,7 @@ footer {
 #footer .row-1 {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+    flex-wrap: wrap;
     gap: 15px;
 }
 
@@ -332,7 +289,7 @@ footer {
     transform: scale(1.1);
 }
 
-/* Ajustes para pantallas más pequeñas */
+
 @media (max-width: 600px) {
     .name {
         padding: 20px;
@@ -356,7 +313,7 @@ footer {
     }
     
     #footer .row-1 {
-        flex-direction: column; /* Cambia a formato de columna en móviles */
+        flex-direction: column;
         align-items: center;
     }
 
@@ -373,16 +330,16 @@ footer {
 @media (max-width: 768px) {
 
     .header nav {
-        flex-direction: row; /* Asegura que los elementos estén en línea */
-        flex-wrap: nowrap;  /* Evita que se apilen verticalmente */
+        flex-direction: row;
+        flex-wrap: nowrap;
         justify-content: center;
-        gap: 5px; /* Espaciado reducido */
+        gap: 5px;
     }
 
     .header a {
         font-size: 14px;
         padding: 6px 8px;
-        white-space: nowrap; /* Evita saltos de línea */
+        white-space: nowrap;
     }
 
 
@@ -435,16 +392,16 @@ footer {
 
 @media (max-width: 720px) {
     .header nav {
-        flex-direction: row; /* Asegura que los elementos estén en línea */
-        flex-wrap: nowrap;  /* Evita que se apilen verticalmente */
+        flex-direction: row;
+        flex-wrap: nowrap; 
         justify-content: center;
-        gap: 5px; /* Espaciado reducido */
+        gap: 5px; 
     }
 
     .header a {
         font-size: 14px;
         padding: 6px 8px;
-        white-space: nowrap; /* Evita saltos de línea */
+        white-space: nowrap;
     }
 
 
@@ -484,16 +441,16 @@ footer {
 
 @media (max-width: 480px) {
     .header nav {
-        flex-direction: row; /* Asegura que los elementos estén en línea */
-        flex-wrap: nowrap;  /* Evita que se apilen verticalmente */
+        flex-direction: row; 
+        flex-wrap: nowrap; 
         justify-content: center;
-        gap: 5px; /* Espaciado reducido */
+        gap: 5px; 
     }
 
     .header a {
         font-size: 14px;
         padding: 6px 8px;
-        white-space: nowrap; /* Evita saltos de línea */
+        white-space: nowrap;
     }
 
     
@@ -545,7 +502,7 @@ footer {
     footer nav {
         flex-direction: column;
         align-items: center;
-        gap: 8px; /* Reduce espacio para mejor ajuste */
+        gap: 8px;
     }
 
     footer nav a {

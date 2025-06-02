@@ -1,3 +1,4 @@
+/*
 if (!sessionStorage.getItem("redirected")) {
     const userLang = navigator.language || navigator.languages[0];
     const sites = {
@@ -9,7 +10,7 @@ if (!sessionStorage.getItem("redirected")) {
 
     sessionStorage.setItem("redirected", "true");
     window.location.href = sites[userLang] || defaultSite;
-}
+}*/
 
 document.querySelectorAll('.smooth-scroll').forEach(anchor => {
     anchor.addEventListener('click', function(e) {

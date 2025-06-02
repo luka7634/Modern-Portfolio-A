@@ -1,11 +1,11 @@
 if (!sessionStorage.getItem("redirected")) {
     const userLang = navigator.language || navigator.languages[0];
     const sites = {
-        "es": "../aside/index-es.html",
-        "en": "../index.html"
+        "es": "/aside/index-es.html",
+        "en": "/index.html"
     };
 
-    const defaultSite = "../index.html";
+    const defaultSite = "/index.html";
 
     sessionStorage.setItem("redirected", "true");
     window.location.href = sites[userLang] || defaultSite;

@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 * {
     box-sizing: border-box;
-    font-family: Consolas, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -15,8 +17,8 @@ body {
     gap: 2rem;
     list-style-type: none;
     position: fixed;
-    top: 20px;
-    left: 20px;
+    /* top: 20px;
+    left: 20px; */
     z-index: 1000;
     background: #ffffff00;
     backdrop-filter: blur(5px);
@@ -292,9 +294,9 @@ footer {
         gap: 1.5rem;
     }
 
-    body {
+    /* body {
         margin-top: 70px;
-    }
+    } */
 
     .header a{
         font-size: 14px;
@@ -343,9 +345,9 @@ footer {
         gap: 1.2rem;
     }
 
-    body {
+    /* body {
         margin-top: 70px;
-    }
+    } */
 
     .header a{
         font-size: 14px;
@@ -390,8 +392,12 @@ footer {
 }
 
 @media (max-width: 480px) {
-    body {
+    /* body {
         margin-top: 70px;
+    } */
+    .header nav{
+        position: relative;
+        padding: 10px;
     }
     
     .name h1 {
